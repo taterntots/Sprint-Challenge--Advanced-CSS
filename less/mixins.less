@@ -1,5 +1,17 @@
 // Mixins Here
 
+.flex(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.navDecoration(@deco: none, @color: black) {
+    text-decoration: @deco;
+    color: @color;
+}
+
 .buttonDesign(@bgColor: #008080, @txtColor: white) {
     background-color: @bgColor;
     color: @txtColor;

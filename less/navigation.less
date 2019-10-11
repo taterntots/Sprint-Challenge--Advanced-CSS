@@ -1,21 +1,17 @@
 // Navigation code here
 
 nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .flex(column, space-evenly, center);
     margin-top: 1%;
 
     .navItemContainer {
-        display: flex;
-        justify-content: space-evenly;
+        .flex(row, space-evenly, center);
         width: 35%;
 
         a {
             font-size: 1.6rem;
             padding: 3% 0%;
-            text-decoration: none;
-            color: black;
+            .navDecoration(none, black);
         }
     }
 }
