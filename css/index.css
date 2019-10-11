@@ -177,6 +177,11 @@ nav .navItemContainer {
   align-items: center;
   width: 35%;
 }
+@media (max-width: 500px) {
+  nav .navItemContainer {
+    width: 85%;
+  }
+}
 nav .navItemContainer a {
   font-size: 1.6rem;
   padding: 3% 0%;
@@ -207,6 +212,23 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .space-images .blast {
+    width: 90%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
