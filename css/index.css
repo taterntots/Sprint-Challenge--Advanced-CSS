@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  margin-top: 90px;
 }
 html,
 body {
@@ -163,14 +164,21 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.navContainer {
+  position: fixed;
+  top: 0;
+  background-color: #F4F4F4;
+  z-index: 9999;
+  width: 100%;
+}
+.navContainer nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1%;
 }
-nav .navItemContainer {
+.navContainer nav .navItemContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -178,11 +186,11 @@ nav .navItemContainer {
   width: 35%;
 }
 @media (max-width: 500px) {
-  nav .navItemContainer {
+  .navContainer nav .navItemContainer {
     width: 85%;
   }
 }
-nav .navItemContainer a {
+.navContainer nav .navItemContainer a {
   font-size: 1.6rem;
   padding: 3% 0%;
   text-decoration: none;

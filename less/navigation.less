@@ -1,21 +1,25 @@
 // Navigation code here
 
-nav {
-    .flex(column, space-evenly, center);
-    margin-top: 1%;
+.navContainer {
+    .lockNavBar();
 
-    .navItemContainer {
-        .flex(row, space-evenly, center);
-        width: 35%;
+    nav {
+        .flex(column, space-evenly, center);
+        margin-top: 1%;
 
-        @media @phone {
+        .navItemContainer {
+            .flex(row, space-evenly, center);
+            width: 35%;
+
+            @media @phone {
             width: 85%;
-        }
+            }
 
-        a {
-            font-size: 1.6rem;
-            padding: 3% 0%;
-            .navDecoration(none, black);
+            a {
+                font-size: 1.6rem;
+                padding: 3% 0%;
+                .navDecoration(none, black);
+            }
         }
     }
 }
