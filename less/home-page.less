@@ -58,6 +58,17 @@
       }
 
       .btn {
+        .buttonDesign(black, white);
+        text-align: center;
+        padding: 8px 0px;
+        border-radius: 5px;
+        font-size: 1.9rem;
+        width: 100px;
+
+        &:hover {
+          .buttonDesign(white, black);
+          border: 2px solid black;
+        }
       }
     }
 
