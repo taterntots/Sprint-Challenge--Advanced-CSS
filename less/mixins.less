@@ -1,1 +1,27 @@
 // Mixins Here
+
+.lockNavBar() {
+    position: fixed;
+    top: 0;
+    background-color: #F4F4F4;
+    z-index: 9999;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.flex(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.navDecoration(@deco: none, @color: #22283A) {
+    text-decoration: @deco;
+    color: @color;
+}
+
+.buttonDesign(@bgColor: #008080, @txtColor: white) {
+    background-color: @bgColor;
+    color: @txtColor;
+}
